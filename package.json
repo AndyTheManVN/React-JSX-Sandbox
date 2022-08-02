@@ -1,7 +1,7 @@
 {
-  "name": "react-jsx",
+  "name": "jsx-javascript-xml",
   "version": "1.0.0",
-  "description": "",
+  "description": "JSX learn to support react",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

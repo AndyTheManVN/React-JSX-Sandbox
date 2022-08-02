@@ -23,3 +23,15 @@ import "./styles.css";
 
 - Biến sẽ nằm trong {} vì là dạng cấu trúc javascript. <br>
   `<h6> This year: {new Date().getFullYear()} </h6>`
+
+## II. THỰC HÀNH:
+
+> 1. Manipulate style and time:
+
+- Id="greeting" xuất hiện Good morning, afternoon, everning và thay đổi màu theo đúng giờ truy cập trên trình duyệt.
+- Dùng currentTime lấy giờ hiện tại
+  ```
+  const currentTime = new Date().getHours();
+  new Date(2022,1,1,20): số cuối là giờ, nhập để test dữ liệu
+  ```
+- Dùng inline style để thay đổi màu với CSS

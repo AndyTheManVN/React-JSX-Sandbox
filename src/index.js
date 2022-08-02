@@ -10,6 +10,7 @@ const customStyle = {
 };
 
 customStyle.border = "0px";
+customStyle.color = "blue";
 
 //Render dữ liệu vào id=root trong file index.html
 createRoot(document.getElementById("root")).render(
@@ -26,4 +27,27 @@ createRoot(document.getElementById("picture")).render(
     <img src={"https://picsum.photos/200/300?grayscale"} />
     <img src={"https://picsum.photos/200/300/?blur=2"} />
   </div>
+);
+
+// Practise 1: show greeting text and change color follow time
+const currentTime = new Date().getHours();
+let greetingsShow;
+
+const greentingStyle = {
+  fontSize: "10px"
+};
+
+if (currentTime < 12) {
+  greetingsShow = "Good morning";
+  greentingStyle.color = "blue";
+} else if (greetingsShow < 18) {
+  greetingsShow = "Good afternoon";
+  greentingStyle.color = "yellow";
+} else {
+  greetingsShow = "Good night";
+  greentingStyle.color = "red";
+}
+
+createRoot(document.getElementById("greetings")).render(
+  <h3 style={greentingStyle}>{greetingsShow}</h3>
 );
