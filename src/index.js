@@ -40,7 +40,7 @@ const greentingStyle = {
 if (currentTime < 12) {
   greetingsShow = "Good morning";
   greentingStyle.color = "blue";
-} else if (greetingsShow < 18) {
+} else if (currentTime < 18) {
   greetingsShow = "Good afternoon";
   greentingStyle.color = "yellow";
 } else {
