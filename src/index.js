@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
+import App from "./Components/App";
 
 //inline style
 const customStyle = {
@@ -51,3 +52,6 @@ if (currentTime < 12) {
 createRoot(document.getElementById("greetings")).render(
   <h3 style={greentingStyle}>{greetingsShow}</h3>
 );
+
+//Practise 2: React Component
+createRoot(document.getElementById("reactComponent")).render(<App />);

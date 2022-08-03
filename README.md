@@ -35,3 +35,21 @@ import "./styles.css";
   new Date(2022,1,1,20): số cuối là giờ, nhập để test dữ liệu
   ```
 - Dùng inline style để thay đổi màu với CSS
+
+> 2. React Component:
+>    **Components cho phép chia UI thành các phần độc lập, có thể tái sử dụng và có thể sử dụng chúng 1 cách độc lập.**
+
+- Tạo file App.jsx khai báo tất cả các component sử dụng cho app
+  ```
+  function App() {
+    return(
+      <Component1 />
+      <component2 />
+      ...
+    );
+  }
+  export default App
+  ```
+- Trong app.js khai báo để dùng component
+  **<App />** : tên khai báo trong export default AppApp
+  `createRoot(document.getElementById("reactComponent")).render(<App />);`
