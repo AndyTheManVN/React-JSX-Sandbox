@@ -2,6 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
 import App from "./Components/App";
+import * as Calculation from "./Components/Calculation";
 
 //inline style
 const customStyle = {
@@ -55,3 +56,14 @@ createRoot(document.getElementById("greetings")).render(
 
 //Practise 2: React Component
 createRoot(document.getElementById("reactComponent")).render(<App />);
+
+createRoot(document.getElementById("cal")).render(
+  <div>
+    <ul>
+      <li>{Calculation.add(1, 2)}</li>
+      <li>{Calculation.subtract(1, 2)}</li>
+      <li>{Calculation.multiply(1, 2)}</li>
+      <li>{Calculation.divide(5, 2)}</li>
+    </ul>
+  </div>
+);

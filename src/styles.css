@@ -10,3 +10,8 @@
 p {
   color: yellow;
 }
+
+section {
+  display: block;
+  border: 1px;
+}

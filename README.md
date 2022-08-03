@@ -37,7 +37,8 @@ import "./styles.css";
 - Dùng inline style để thay đổi màu với CSS
 
 > 2. React Component:
->    **Components cho phép chia UI thành các phần độc lập, có thể tái sử dụng và có thể sử dụng chúng 1 cách độc lập.**
+
+- **Components cho phép chia UI thành các phần độc lập, có thể tái sử dụng và có thể sử dụng chúng 1 cách độc lập.**
 
 - Tạo file App.jsx khai báo tất cả các component sử dụng cho app
   ```
@@ -49,7 +50,8 @@ import "./styles.css";
     );
   }
   export default App
+  export {name1, name2}
   ```
-- Trong app.js khai báo để dùng component
-  **<App />** : tên khai báo trong export default AppApp
+- Trong app.js khai báo để dùng component<br>
+  **<App />** : tên khai báo trong export default App
   `createRoot(document.getElementById("reactComponent")).render(<App />);`
